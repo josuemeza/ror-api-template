@@ -53,11 +53,25 @@ $ rails db:migrate
 $ rails db:seed
 ```
 
-## Recomendation
+## Logs
 - To get log use:
 ```sh
 $ tail -f log/development.log
 ```
+
+## Simplify with makefile
+To simplify the use, you can use a make commands like `make {command}`. All commands is described on next table.
+
+| Command | Description |
+|---------|-------------|
+| new-project | Init a project creating and build. |
+| new-database | Create, migrate and seed database. |
+| database-migration | Make a database migration. |
+| database-seed | Run seeds on database. |
+| project-up | Up the project. |
+| project-down | Down the project. |
+| log-monitor | Show development logs. |
+| clean-all | Remove all containers and images. |
 
 ## Author
 
